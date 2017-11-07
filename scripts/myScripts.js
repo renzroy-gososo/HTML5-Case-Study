@@ -1,3 +1,4 @@
+  // Functions for Slideshows
   function plusDivs(n) {
     showDivs(slideIndex += n);
   }
@@ -7,6 +8,27 @@
   function plusDivs3(n) {
     showDivs3(slideIndex3 += n);
   }
+  function plusDivs4(n) {
+    showDivs4(slideIndex4 += n);
+  }  
+  function plusDivs5(n) {
+    showDivs5(slideIndex5 += n);
+  }  
+  function plusDivs6(n) {
+    showDivs6(slideIndex6 += n);
+  }   
+  function plusDivs7(n) {
+    showDivs7(slideIndex7 += n);
+  }    
+  function plusDivs8(n) {
+    showDivs8(slideIndex8 += n);
+  }    
+  function plusDivs9(n) {
+    showDivs9(slideIndex9 += n);
+  }   
+  function plusDivs10(n) {
+    showDivs10(slideIndex10 += n);
+  } 
   function showDivs(n) {
    var i;
    var x = document.getElementsByClassName("mySlides");
@@ -37,7 +59,77 @@
     }
     x[slideIndex3-1].style.display = "block";  
   }
+  function showDivs4(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides4");
+   if (n > x.length) {slideIndex4 = 1}    
+    if (n < 1) {slideIndex4 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex4-1].style.display = "block";  
+  }
 
+  function showDivs5(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides5");
+   if (n > x.length) {slideIndex5 = 1}    
+    if (n < 1) {slideIndex5 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex5-1].style.display = "block";  
+  }
+  function showDivs6(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides6");
+   if (n > x.length) {slideIndex6 = 1}    
+    if (n < 1) {slideIndex6 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex6-1].style.display = "block";  
+  }
+  function showDivs7(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides7");
+   if (n > x.length) {slideIndex7 = 1}    
+    if (n < 1) {slideIndex7 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex7-1].style.display = "block";  
+  }
+  function showDivs8(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides8");
+   if (n > x.length) {slideIndex8 = 1}    
+    if (n < 1) {slideIndex8 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex8-1].style.display = "block";  
+  }
+  function showDivs9(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides9");
+   if (n > x.length) {slideIndex9 = 1}    
+    if (n < 1) {slideIndex9 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex9-1].style.display = "block";  
+  }
+  function showDivs10(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides10");
+   if (n > x.length) {slideIndex10 = 1}    
+    if (n < 1) {slideIndex10 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex10-1].style.display = "block";  
+  }
 
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -229,4 +321,103 @@ function w3_close() {
     var denominator1 = document.getElementById('txtPart2Denominator1').value;
     var denominator1TrueColor = document.getElementById('txtPart2Denominator1').style.backgroundColor = "orange";
     denominator1 === "7" ? denominator1TrueColor : document.getElementById('txtPart2Denominator1').style.backgroundColor = "red";        
+  }
+  //Part 3 Question 1
+
+  function checkP3Q1Num1(){ 
+    var numerator1 = document.getElementById('txtP3Q1Num1').value;
+    var numerator1TrueColor = document.getElementById('txtP3Q1Num1').style.backgroundColor = "orange";
+    numerator1 === "4" ? numerator1TrueColor : document.getElementById('txtP3Q1Num1').style.backgroundColor = "red";        
+  }
+  function checkP3Q1Denom1(){ 
+    var denominator1 = document.getElementById('txtP3Q1Denom1').value;
+    var denominator1TrueColor = document.getElementById('txtP3Q1Denom1').style.backgroundColor = "orange";
+    denominator1 === "10" ? denominator1TrueColor : document.getElementById('txtP3Q1Denom1').style.backgroundColor = "red";        
+  }
+  function checkP3Q1Num2(){ 
+    var numerator2 = document.getElementById('txtP3Q1Num2').value;
+    var numerator2TrueColor = document.getElementById('txtP3Q1Num2').style.backgroundColor = "orange";
+    numerator2 === "3" ? numerator2TrueColor : document.getElementById('txtP3Q1Num2').style.backgroundColor = "red";        
+  }
+  function checkP3Q1Denom2(){ 
+    var denominator2 = document.getElementById('txtP3Q1Denom2').value;
+    var denominator2TrueColor = document.getElementById('txtP3Q1Denom2').style.backgroundColor = "orange";
+    denominator2 === "10" ? denominator2TrueColor : document.getElementById('txtP3Q1Denom2').style.backgroundColor = "red";        
+  } 
+  //Part 3 Question 2
+   function checkP3Q2Num1(){ 
+    var numerator1 = document.getElementById('txtP3Q2Num1').value;
+    var numerator1TrueColor = document.getElementById('txtP3Q2Num1').style.backgroundColor = "orange";
+    numerator1 === "1" ? numerator1TrueColor : document.getElementById('txtP3Q2Num1').style.backgroundColor = "red";        
+  }
+  function checkP3Q2Denom1(){ 
+    var denominator1 = document.getElementById('txtP3Q2Denom1').value;
+    var denominator1TrueColor = document.getElementById('txtP3Q2Denom1').style.backgroundColor = "orange";
+    denominator1 === "4" ? denominator1TrueColor : document.getElementById('txtP3Q2Denom1').style.backgroundColor = "red";        
+  }
+  //Part 3 Question 3
+   function checkP3Q3Num1(){ 
+    var numerator1 = document.getElementById('txtP3Q3Num1').value;
+    var numerator1TrueColor = document.getElementById('txtP3Q3Num1').style.backgroundColor = "orange";
+    numerator1 === "6" || numerator1 === "3" ? numerator1TrueColor : document.getElementById('txtP3Q3Num1').style.backgroundColor = "red";        
+  }
+  function checkP3Q3Denom1(){ 
+    var denominator1 = document.getElementById('txtP3Q3Denom1').value;
+    var denominator1TrueColor = document.getElementById('txtP3Q3Denom1').style.backgroundColor = "orange";
+    denominator1 === "8" || denominator1 === "4" ? denominator1TrueColor : document.getElementById('txtP3Q3Denom1').style.backgroundColor = "red";        
+  }
+  //Part 4 Question 1
+
+  function checkP4Q1Num1(){ 
+    var numerator1 = document.getElementById('txtP4Q1Num1').value;
+    var numerator1TrueColor = document.getElementById('txtP4Q1Num1').style.backgroundColor = "orange";
+    numerator1 === "2" ? numerator1TrueColor : document.getElementById('txtP4Q1Num1').style.backgroundColor = "red";        
+  }
+  function checkP4Q1Denom1(){ 
+    var denominator1 = document.getElementById('txtP4Q1Denom1').value;
+    var denominator1TrueColor = document.getElementById('txtP4Q1Denom1').style.backgroundColor = "orange";
+    denominator1 === "3" ? denominator1TrueColor : document.getElementById('txtP4Q1Denom1').style.backgroundColor = "red";        
+  }
+  function checkP4Q1Num2(){ 
+    var numerator2 = document.getElementById('txtP4Q1Num2').value;
+    var numerator2TrueColor = document.getElementById('txtP4Q1Num2').style.backgroundColor = "orange";
+    numerator2 === "1" ? numerator2TrueColor : document.getElementById('txtP4Q1Num2').style.backgroundColor = "red";        
+  }
+  function checkP4Q1Denom2(){ 
+    var denominator2 = document.getElementById('txtP4Q1Denom2').value;
+    var denominator2TrueColor = document.getElementById('txtP4Q1Denom2').style.backgroundColor = "orange";
+    denominator2 === "2" ? denominator2TrueColor : document.getElementById('txtP4Q1Denom2').style.backgroundColor = "red";        
+  } 
+  //Part 4 Question 2
+   function checkP4Q2Num1(){ 
+    var numerator1 = document.getElementById('txtP4Q2Num1').value;
+    var numerator1TrueColor = document.getElementById('txtP4Q2Num1').style.backgroundColor = "orange";
+    numerator1 === "3" ? numerator1TrueColor : document.getElementById('txtP4Q2Num1').style.backgroundColor = "red";        
+  }
+  function checkP4Q2Denom1(){ 
+    var denominator1 = document.getElementById('txtP4Q2Denom1').value;
+    var denominator1TrueColor = document.getElementById('txtP4Q2Denom1').style.backgroundColor = "orange";
+    denominator1 === "8" ? denominator1TrueColor : document.getElementById('txtP4Q2Denom1').style.backgroundColor = "red";        
+  }
+  //Part 4 Question 3
+   function checkP4Q3Num1(){ 
+    var numerator1 = document.getElementById('txtP4Q3Num1').value;
+    var numerator1TrueColor = document.getElementById('txtP4Q3Num1').style.backgroundColor = "orange";
+    numerator1 === "3" ? numerator1TrueColor : document.getElementById('txtP4Q3Num1').style.backgroundColor = "red";        
+  }
+  function checkP4Q3Denom1(){ 
+    var denominator1 = document.getElementById('txtP4Q3Denom1').value;
+    var denominator1TrueColor = document.getElementById('txtP4Q3Denom1').style.backgroundColor = "orange";
+    denominator1 === "1" ? denominator1TrueColor : document.getElementById('txtP4Q3Denom1').style.backgroundColor = "red";        
+  }
+  //Part 4 Question 4
+   function checkP4Q4Num1(){ 
+    var numerator1 = document.getElementById('txtP4Q4Num1').value;
+    var numerator1TrueColor = document.getElementById('txtP4Q4Num1').style.backgroundColor = "orange";
+    numerator1 === "2" ? numerator1TrueColor : document.getElementById('txtP4Q4Num1').style.backgroundColor = "red";        
+  }
+  function checkP4Q4Denom1(){ 
+    var denominator1 = document.getElementById('txtP4Q4Denom1').value;
+    var denominator1TrueColor = document.getElementById('txtP4Q4Denom1').style.backgroundColor = "orange";
+    denominator1 === "2" ? denominator1TrueColor : document.getElementById('txtP4Q4Denom1').style.backgroundColor = "red";        
   }
